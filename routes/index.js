@@ -19,7 +19,7 @@ router.get("/login",function(req,res){
   res.render("login");
 });
 router.get('/',function(req,res){
-  res.render('home/home')
+  res.render('./home/home')
 });
 
 //enviar datos del registro a la base de datos
@@ -39,7 +39,7 @@ router.post("/users",function(req,res){
       console.log(String(err));
     }
   if (user.password !== '')
-    res.redirect("/home");
+    res.redirect("./home");
   else
     res.redirect("/register")
   });
@@ -49,7 +49,7 @@ router.post("/users",function(req,res){
 router.post("/sessions",function(req,res){
   User.findOne({username: req.body.username, password: req.body.password},function(err,user){
       req.session.user_id = user._id;
-      res.redirect("/home");
+      res.redirect("./home");
 
     });
   });
