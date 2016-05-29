@@ -3,7 +3,7 @@ var router = express.Router();
 var User = require('../models/user').User;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/index', function(req, res, next) {
  	console.log(req.session.user_id);
 	res.render('index');
 });
@@ -49,7 +49,7 @@ router.post("/users",function(req,res){
 router.post("/sessions",function(req,res){
   User.findOne({username: req.body.username, password: req.body.password},function(err,user){
       req.session.user_id = user._id;
-      res.redirect("./home");
+      res.redirect("home");
 
     });
   });
