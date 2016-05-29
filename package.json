@@ -1,0 +1,31 @@
+{
+  "name": "proyecto_stock_market",
+  "version": "1.0.0",
+  "description": "Proyecto Stock Market con Node JS, Express JS, EJS y Mongoose.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiju84/ProyectoStockMarket.git"
+  },
+  "author": "javiju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiju84/ProyectoStockMarket/issues"
+  },
+  "homepage": "https://github.com/javiju84/ProyectoStockMarket#readme",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "cookie-session": "^2.0.0-alpha.1",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "nodemon": "^1.9.2",
+    "serve-favicon": "~2.3.0"
+  }
+}
