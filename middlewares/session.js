@@ -1,6 +1,7 @@
 var User = require("../models/user").User;
-
+	
 module.exports = function(req,res,next){
+	console.log('buscando user' + req.session)
 	if(!req.session.user_id){
 		res.redirect("/login")
 	}

@@ -14,8 +14,6 @@ var password_validation={
 }
 
 var user_schema = new Schema({
-	nombre: String,
-	apellido: String,
 	username: {type: String, required: true,maxlength:[50,"Username es muy grande"]},
 	email: {type: String, required: "El correo es obligatorio",match:email_match},
 	password: {type:String,required: true,minlength:[8,"El password es muy corto"], validate: password_validation}
