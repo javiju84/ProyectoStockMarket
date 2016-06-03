@@ -1,0 +1,21 @@
+{
+  "name": "app_models",
+  "version": "1.0.0",
+  "description": "aplicacion con todas las base de datos y modelos",
+  "main": "appmodel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "author": "javiju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiju84/ProyectoStockMarket/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.1",
+    "mongoose": "^4.4.19",
+    "nodemon": "^1.9.2",
+    "request": "^2.72.0"
+  }
+}
