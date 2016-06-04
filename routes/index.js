@@ -22,6 +22,24 @@ router.get('/',function(req,res){
   res.render('./home/home')
 });
 
+
+//cerrar sesion y destruir cookie
+/*
+router.get('/logout',function(req,res){
+ // req.session = null;
+  //res.redirect('index')
+
+
+});*/
+
+router.get('/logout', function atLogout (req, res) {
+   // res.clearCookie('session');
+    res.redirect('login');
+    console.log('sesion cerrada')
+});
+
+
+
 //enviar datos del registro a la base de datos
 router.post("/users",function(req,res){
   var user = new User({   
@@ -39,7 +57,7 @@ router.post("/users",function(req,res){
   if (user.password !== '')
     res.redirect("/home");
   else
-    res.redirect("/register")
+    res.redirect("/home")
   });
 });
 
