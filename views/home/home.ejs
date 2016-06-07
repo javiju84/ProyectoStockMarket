@@ -10,7 +10,7 @@
   <title>Stock Market</title>
 
    <!-- Included Bootstrap CSS Files -->
-	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/js/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="js/bootstrap/css/bootstrap-responsive.min.css" />
 	
 	<!-- Includes FontAwesome -->
@@ -20,6 +20,7 @@
 	
 	<!-- Included Bootstrap Customization CSS Files -->	
 	<link rel="stylesheet" href="css/bootstrap-extension.css" />
+	<link rel="stylesheet" href0="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 	
 	<link rel="stylesheet" href="css/carousel-custom-01.css" />
 
@@ -40,6 +41,13 @@
 			</a>
 			<a class="brand" href="/home">Stock Market</a>
 			<div class="nav-collapse">
+				<ul class="nav pull-left">
+					<li><a href="./home/ibex">IBEX-35</a></li>
+                    <li><a href="./home/europa">EUROPA</a></li>
+					<li><a href="./home/eeuu">EEUU</a></li>
+					<li><a href="./home/asia">ASIA</a></li>
+					<li><a href="./home/divisas">DIVISAS</a></li>
+				</ul>
 				<ul class="nav pull-right">
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, <%= user.username %> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -54,7 +62,519 @@
 			</div>
 		</div>
 	</div>
+</div> 
+<!--
+<div class="content vspace50">
+
+<div class="container" >
+	<div class="row">
+
+			<div class="span4">
+				<table  class="table table-striped table-bordered" >
+					<thead>
+						<th><h4>Mercados</h4></th>
+		            </thead>
+                    <thead>                        
+                        <tr>
+                            <th>Name</th>
+                            <th>Cierre</th>
+                            <th>Volumen</th>
+                            <th>Vol.Anterior</th>
+                        </tr>
+		            <tbody>
+			            <tr>
+			                <td><a href="#">IBEX-35</a></td>
+			                <td>12</td>
+   			                <td>123131231</td>
+                            <td>123131231</td>                
+
+			            </tr>
+			            <tr>
+			                <td><a href="#">EUROSTOXX</a></td>
+			                <td>12</td>
+			                <td>123131231</td>
+                            <td>123131231</td>                
+			            </tr>
+			            <tr>
+			                <td><a href="#">DAX-30</a></td>
+			                <td>12</td>			                
+			                <td>123131231</td> 
+                            <td>123131231</td>               
+        
+			            </tr>
+			            <tr>
+			                <td><a href="#">SP-500</a></td>
+			                <td>12</td>
+   			                <td>123131231</td> 
+                            <td>123131231</td>               
+
+			            </tr>
+                        <tr>
+                            <td><a href="#">DOW JONES</a></td>
+                            <td>12</td>
+                            <td>123131231</td>  
+                            <td>123131231</td>              
+
+                        </tr>
+                        <tr>
+                            <td><a href="#">Nikkei 225</a></td>
+                            <td>12</td>
+                            <td>123131231</td>  
+                            <td>123131231</td>              
+
+                        </tr>
+		            </tbody>   
+
+				</table>
+
+			</div>
+			<div class="span4">
+				<table  class="table table-striped table-bordered" >
+					<thead>
+						<th><h4>Materias Primas</h4></th>
+					</thead>
+					<thead>
+						
+			            <tr>
+			                <th>Name</th>
+			                <th>USD</th>
+
+			            </tr>
+		            </thead>
+		            <tbody>
+			            <tr>
+			                <td>GOLD</td>
+			                <td>12</td>
+			            </tr>
+			            <tr>
+			                <td>SILVER</td> 
+			                <td>12</td>
+			            </tr>
+			            <tr>
+                            <td>Platinum</td> 
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Petroleo</td> 
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Euribor</td> 
+                            <td>12</td>
+                        </tr>
+		            </tbody>        	
+				</table>
+			</div>
+
+			<div class="span4">
+				<table  class="table table-striped table-bordered" >
+					<thead>
+						<th><h4>Divisas</h4></th>
+
+			            <tr>
+			                <th>Name</th>
+			                <th>Cambio</th>
+                            <th>Cambio Ant.</th>
+                            <th>Fecha</th>
+			            </tr>
+		            </thead>
+		            <tbody>
+			            <tr>
+			                <td>Euro-Dólar</td>
+			                <td>12</td>
+                            <td>12</td>
+                            <td>12-12-2012</td>
+			            </tr>
+			            <tr>
+			                <td>Euro-Libra</td>
+			                <td>12</td>
+                            <td>12</td>               
+                            <td>12-12-2012</td>
+			            </tr>
+			            <tr>
+			                <td>Euro-Yen</td>
+			                <td>12</td>   
+                            <td>12</td>
+                            <td>12-12-2012</td>   
+			            </tr>
+		            </tbody>   
+
+				</table>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+<div class="container">
+    <table  class="table table-striped table-bordered" >
+        <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Apertura</th>
+                <th>Alto</th>
+                <th>Bajo</th>
+                <th>Cierre</th>
+                <th>Volumen</th>
+                <th>Ajust.Cierre</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="./home/ibex">IBEX-35</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ACCIONA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ACERINOX</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ACS</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">AENA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">AMADEUS IT HOLDING</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ARCELORMITTAL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">BANCO POPULAR</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">BANCO SABADELL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">BANKIA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">BANKINTER</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">BBVA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">CAIXABANK</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">DIA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ENAGAS</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">ENDESA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">FCC</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">FERROVIAL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">GAMESA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">GAS NATURAL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">GRIFOLS</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">IAG</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">IBERDROLA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">INDITEX</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">INDRA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">MAPFRE</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">MEDIASET</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">MERLIN PROP.</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">OHL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">RED ELÉCTRICA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">REPSOL</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">SACYR</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">SANTANDER</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="#">TECNICAS REUNIDAS</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><a href="#">TELEFÓNICA</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+-->
 
 
 
@@ -63,5 +583,6 @@
 	<script src="js/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/script.js"></script>
+	
 </body>
 </html>

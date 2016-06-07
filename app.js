@@ -36,7 +36,6 @@ app.use('/users', users);
 app.use('/home',session_middleware);
 app.use('/home',routes);
 
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -69,6 +68,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(7000);
-console.log("localhost:7000")
+app.listen(7777);
+console.log("localhost:7777")
 module.exports = app;
