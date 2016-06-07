@@ -94,10 +94,11 @@ router.get('/ibex',function(req,res){
 
 
 //ibex35
+/*
 router.get('/abertis',function(req,res){
   res.render('./home/ibex/abertis')
 });
-
+*/
 router.get('/acciona',function(req,res){
   res.render('./home/ibex/acciona')
 });

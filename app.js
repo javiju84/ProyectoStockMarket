@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var cookieSession = require ("cookie-session");
 var bodyParser = require('body-parser');
 
+var routabertis = require('./routes/ibex/routabertis');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 //BaseDatos
@@ -35,6 +36,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/home',session_middleware);
 app.use('/home',routes);
+app.use('/home/abertis',routabertis);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
