@@ -42,12 +42,15 @@ var routsacyr = require('./routes/ibex/routsacyr');
 var routtecnicasreunidas = require('./routes/ibex/routtecnicasreunidas');
 var routsantander = require('./routes/ibex/routsantander');
 var routtelefonica = require('./routes/ibex/routtelefonica');
-
+var ibex = require('./routes/ibex');
+var europa = require('./routes/europa');
+var eeuu = require('./routes/eeuu');
+var asia = require('./routes/asia');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 //BaseDatos
-var ibex35_santander = require("./models/santander").ibex35_santander;
+//var ibex35_santander = require("./models/santander").ibex35_santander;
 var User = require('./models/user').User;
 var app = express();
 var session_middleware = require("./middlewares/session");
@@ -75,6 +78,10 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/home',session_middleware);
 app.use('/home',routes);
+app.use('/home/ibex',ibex);
+app.use('/home/europa',europa);
+app.use('/home/eeuu',eeuu);
+app.use('/home/asia',asia);
 app.use('/home/abertis',routabertis);
 app.use('/home/acciona',routacciona);
 app.use('/home/acerinox',routacerinox);
