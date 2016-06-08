@@ -98,7 +98,7 @@ router.get('/ibex',function(req,res){
 router.get('/abertis',function(req,res){
   res.render('./home/ibex/abertis')
 });
-*/
+
 router.get('/acciona',function(req,res){
   res.render('./home/ibex/acciona')
 });
@@ -223,6 +223,7 @@ router.get('/sacyr',function(req,res){
   res.render('./home/ibex/sacyr')
 });
 
+
 router.get('/santander',function(req,res){
   res.render('./home/ibex/santander')
 });
@@ -234,4 +235,5 @@ router.get('/tecnicasreunidas',function(req,res){
 router.get('/telefonica',function(req,res){
   res.render('./home/ibex/telefonica')
 });
+*/
 module.exports = router;

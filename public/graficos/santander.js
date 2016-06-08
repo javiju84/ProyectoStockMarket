@@ -8,7 +8,7 @@
 
     window.onload=function(){
       // GET request to localhost:3000/test, which has been configured to send back our db data
-      var aData = JSON.parse(httpGet('http://localhost:9999/STOCKMARKET'));
+      var aData = JSON.parse(httpGet('http://localhost:7777/STOCKMARKET'));
      
       var valores = [];
      

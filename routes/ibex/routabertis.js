@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var request = require ('request');
-/* GET home page. */
-var jsonString = null;
 
+
+var jsonString = null;
 var urlAbertis = "https://www.quandl.com/api/v3/datasets/YAHOO/MC_ABE.json?api_key=HGoTu3E3A_Lsv6biw1kc";
 
 	request({
@@ -78,6 +78,41 @@ var dato2 = [];
   var valores18 = ([dato2 [n=18]]);
   var valores19 = ([dato2 [n=19]]);
 
+var stockchart = [];
+    for (var m = 0; m < jsonArrayValor.length; m++){
+      stockchart.push([
+        jsonArrayValor[m]['fecha'],
+        jsonArrayValor[m]['abierto'],
+        jsonArrayValor[m]['alto'],
+        jsonArrayValor[m]['bajo'],
+        jsonArrayValor[m]['cierre'],
+        jsonArrayValor[m]['volumen'],
+        jsonArrayValor[m]['ajuste_cierre']
+        ]);
+      
+    }
+  
+  var grafico00 = ([stockchart [m=0]]);
+  var grafico01 = ([stockchart [m=1]]);
+  var grafico02 = ([stockchart [m=2]]);
+  var grafico03 = ([stockchart [m=3]]);
+  var grafico04 = ([stockchart [m=4]]);
+  var grafico05 = ([stockchart [m=5]]);
+  var grafico06 = ([stockchart [m=6]]);
+  var grafico07 = ([stockchart [m=7]]);
+  var grafico08 = ([stockchart [m=8]]);
+  var grafico09 = ([stockchart [m=9]]);
+  var grafico10 = ([stockchart [m=10]]);
+  var grafico11 = ([stockchart [m=11]]);
+  var grafico12 = ([stockchart [m=12]]);
+  var grafico13 = ([stockchart [m=13]]);
+  var grafico14 = ([stockchart [m=14]]);
+  var grafico15 = ([stockchart [m=15]]);
+  var grafico16 = ([stockchart [m=16]]);
+  var grafico17 = ([stockchart [m=17]]);
+  var grafico18 = ([stockchart [m=18]]);
+  var grafico19 = ([stockchart [m=19]]);
+  console.log(grafico19)
 
 
 router.get('/', function(req, res, next) {
@@ -103,6 +138,27 @@ router.get('/', function(req, res, next) {
     valores17: valores17,
     valores18: valores18,
     valores19: valores19,
+    grafico00: grafico00,
+    grafico01: grafico01,
+    grafico02: grafico02,
+    grafico03: grafico03,
+    grafico04: grafico04,
+    grafico05: grafico05,
+    grafico06: grafico06,
+    grafico07: grafico07,
+    grafico08: grafico08,
+    grafico09: grafico09,
+    grafico10: grafico10,
+    grafico11: grafico11,
+    grafico12: grafico12,
+    grafico13: grafico13,
+    grafico14: grafico14,
+    grafico15: grafico15,
+    grafico16: grafico16,
+    grafico17: grafico17,
+    grafico18: grafico18,
+    grafico19: grafico19,
+
   });
 });
 

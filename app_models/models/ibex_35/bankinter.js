@@ -5,7 +5,7 @@ var appmodel = express();
 var aData = null;
 
 
-mongoose.connect("mongodb://localhost/STOCKMARKET");
+mongoose.createConnection("mongodb://localhost/STOCKMARKET");
 var db = mongoose.connection;
 var IBEX35_BANKINTER = null;
 db.on("error", console.error.bind(console,"Connection error:"));

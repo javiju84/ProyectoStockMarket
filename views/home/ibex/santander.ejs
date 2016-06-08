@@ -11,7 +11,7 @@
 
    <!-- Included Bootstrap CSS Files -->
 	<link rel="stylesheet" href="../../js/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="../../js/bootstrap/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="../../js/bootstrap/css/bootstrap-theme.min.css" />
 	
 	<!-- Includes FontAwesome -->
 	<!--
@@ -19,15 +19,28 @@
 	-->
 	
 	<!-- Included Bootstrap Customization CSS Files -->	
-	<link rel="stylesheet" href="css/bootstrap-extension.css" />
+	<link rel="stylesheet" href="../../css/bootstrap-extension.css" />
 	<link rel="stylesheet" href0="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 	
-	<link rel="stylesheet" href="css/carousel-custom-01.css" />
+	<link rel="stylesheet" href="../../css/carousel-custom-01.css" />
 
 	<link rel="stylesheet" href="../../js/touchTouch/assets/touchTouch/touchTouch.css" />
 	
 	<link rel="stylesheet" href="../../css/stylesheet.css" />
 
+	<!--grafico
+
+	<script src="./../routes/ibex/routsantander.js"></script>-->
+	<script src="../../AnyChart/js/anychart.min.js"></script>
+	<link rel="stylesheet" href="../../AnyChart/css/anychart-ui.min.css" />
+	<style>
+	        html, body, #container {
+	          width: 100%;
+	          height: 100%;
+	          margin: 0;
+	          padding: 0;
+	      }
+	 </style>
 </head>
 <body>
 
@@ -64,9 +77,92 @@
 	</div>
 </div> 
 
+  <h1><%= title %></h1>
+    <h2>Welcome to <%= title %></h2>
+
+    <ul id="aDocs"></ul>
+
+    	<% aDocs.forEach(function(aDocs){ %>
+    	<li><%=aDocs.fecha %>,<%= aDocs.abierto %></li><% }) %>
+    
+    <div id="container" ></div>
 
 
-	
+     <script type="text/javascript" >
+			         anychart.onDocumentReady(function() {
+			  // create data set on our data
+			  var dataSet = anychart.data.set([
+			    [<% valores19.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores19.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores18.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores18.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores17.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores17.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores16.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores16.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores15.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores15.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores14.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores14.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores13.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores13.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores12.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores12.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores11.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores11.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores10.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores10.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores09.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores09.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores08.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores08.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores07.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores07.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores06.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores06.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores05.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores05.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores04.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores04.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores03.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores03.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores02.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores02.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores01.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores01.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			    [<% valores00.forEach(function(dato2){%><%= dato2[n=0][""]%><%})%>,<% valores00.forEach(function(dato2){%><%= dato2[n=1]%><%})%>],
+			  ]);
+			  // map data for the first series, take x from the zero column and value from the first column of data set
+			  var seriesData = dataSet.mapAs({x: [0], value: [1]});
+
+			 // create line chart
+			  chart = anychart.area();
+
+			  // adding dollar symbols to yAxis labels
+			  chart.yAxis().labels().textFormatter("${%Value}");
+
+			  // turn on chart animation
+			  chart.animation(true);
+			  
+			  // axes settings
+			  chart.yAxis().title('Price');
+			  chart.xAxis().title('Date');
+			  chart.xAxis().labels().padding([5,5,0,5]);
+			  chart.xAxis().labels().rotation(90);
+			  chart.xAxis().overlapMode("allowOverlap");
+
+
+			  // set chart title text settings
+			  chart.title('ACME Share Price<br/>' +
+			  '<span style="color:#212121; font-size: 13px;">September 2015</span>');
+			  chart.title().useHtml(true).padding([0,0,20,0]);
+
+			  // create a series with mapped data
+			  var series = chart.area(seriesData);
+			  series.name("ACME Share Price");
+			  series.hoverMarkers().enabled(true).type('circle').size(4);
+
+			  // set chart tooltip and interactivity settings
+			  chart.tooltip().position('top').anchor('centerbottom');
+			  chart.tooltip().positionMode('point');
+			  chart.interactivity().hoverMode('byX');
+			  
+			  // chart padding
+			  chart.right(20);
+
+			  // set container id for the chart
+			  chart.container('container');
+
+			  // initiate chart drawing
+			  chart.draw();
+			});
+        </script>
+
+
+
+
+
 	<script src="../../js/jquery-1.8.3.min.js" type="text/javascript"></script>
 	<script src="../../js/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../../js/holder.js"></script>

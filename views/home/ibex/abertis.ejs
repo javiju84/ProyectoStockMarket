@@ -19,7 +19,7 @@
 	-->
 	
 	<!-- Included Bootstrap Customization CSS Files -->	
-	<link rel="stylesheet" href="css/bootstrap-extension.css" />
+	<link rel="stylesheet" href="../../css/bootstrap-extension.css" />
 	<link rel="stylesheet" href0="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/mainrss.css" />
 	<link rel="stylesheet" href="css/carousel-custom-01.css" />
@@ -27,8 +27,10 @@
 	<link rel="stylesheet" href="../../js/touchTouch/assets/touchTouch/touchTouch.css" />
 	
 	<link rel="stylesheet" href="../../css/stylesheet.css" />
-	<script src="routes/routabertis.js"></script>
 
+	<script src="../../AnyChart/js/anychart.min.js"></script>
+	<link rel="stylesheet" href="../../AnyChart/css/anychart-ui.min.css" />
+	
 </head>
 <body>
 
@@ -65,72 +67,20 @@
 	</div>
 </div> 
 
-
+  <div  id="grafito" ></div>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="span6">
 			<table  class="table table-striped table-bordered" >
-          
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Grafico</a></li>
-            <li><a data-toggle="tab" href="#empresa">Perfil</a></li>
-            <li><a data-toggle="tab" href="#menu0">Cinco Dias</a></li>
-            <li><a data-toggle="tab" href="#menu1">Finanzas</a></li>
-            <li><a data-toggle="tab" href="#menu2">Expansion</a></li>
-            <li><a data-toggle="tab" href="#menu3">Cotizalia</a></li>
-          </ul>
-
-          <div class="tab-content">
-          	<div id="home" class="tab-pane fade in active">
-                                  
-            </div>
-            <div id="empresa" class="tab-pane fade in active">
-               <h2>Información sobre <strong>ABERTIS</strong></h2>
-				<div class="descripcion"><p>Abertis es la corporación internacional líder en la gestión de autopistas y de infraestructuras de transporte y comunicaciones. Está presente en 10 países de Europa y américa. Gestiona directamente más de 7.300 kilómetros de autopistas y es el líder mundial en este sector. El grupo cuenta con una plantilla de casi 11.000 personas y el 50% de sus ingresos se genera fuera de España. El nivel de aplicación de los informes de Responsabilidad Social Corporativa de Abertis corresponde al más alto, A+.</p><p>Una de las últimas noticias sobre el grupo Abertis ha sido la celebración del 50º aniversario del Túnel de Guadarrama y el cierre de la venta del aeropuerto de Luton a un consorcio conformado por AENA y Ardian.</p><p>Las <strong>acciones de Abertis</strong> tienen su cotización en la Bolsa española (donde, además forma parte del Ibex 35). También está presente en los índices internacionales FTSEurofirst 300 y Standard & Poor's Europe 350.</p></div>
-				<p class="presidente"><strong>Presidente: </strong>Salvador Alemany i Más </p>
-				<p class="sector"><strong>Sector: </strong>Autopistas y aparcamientos </p>
-				<p class="direccion"><strong>Direcci&oacute;n: </strong>Avinguda del Parc Logístic, 12-20 ¿ 08040 Barcelona</p>
-				<p class="telefono"><strong>Tel&eacute;fono: </strong>+34 93 230 50 00 - <strong>Fax:</strong> 93 230 50 01</p>
-				<p id="web"><strong>Web: </strong><strong><a href="http://www.abertis.com/">http://www.abertis.com/</a></strong></p>
-                      
-            </div>
-            <div id="menu0" class="tab-pane fade in active">
-              
-                <div class="post_results" id="post_results1" rss_num="5" rss_url="http://cincodias.com/rss/cincodias/mercados.xml">
-                <div class="loading_rss">
-                    <img alt="Loading..." src="images/loading.gif" />
-                </div>
-            	</div>        
-            </div>
-            <div id="menu1" class="tab-pane fade">
-              
-              <div class="post_results" id="post_results2" rss_num="5" rss_url="http://www.finanzas.com/rss/noticiasportada.xml">
-                <div class="loading_rss">
-                    <img alt="Loading..." src="images/loading.gif" />
-                </div>
-            </div>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              
-                <div class="post_results" id="post_results3" rss_num="5" rss_url="http://estaticos.expansion.com/rss/empresas.xml">
-                  <div class="loading_rss">
-                    <img alt="Loading..." src="images/loading.gif" />
-                  </div>
-              </div>        
-            </div>
-            <div id="menu3" class="tab-pane fade">
-              
-               <div class="post_results" id="post_results4" rss_num="5" rss_url="http://rss.elconfidencial.com/mercados/">
-                  <div class="loading_rss">
-                    <img alt="Loading..." src="images/loading.gif" />
-                  </div>
-              </div>
-            </div>
-          </div>
-          </table>
+	          
+		       
+	        </table>
 		</div>
 
 	    <div class="span6">
+	    	
+	    	<div>
 	      <table  class=" table-striped table-bordered">
 			    	<thead>
 	                        <th><h4>ABERTIS</h4></th>
@@ -329,17 +279,161 @@
 			            </tr>
 			        </tbody>
 			    </table>
+			    </div>
+			 
 		 	</div>
 		</div>
 	</div>
 </div>
+<div class="container">
+	<div class="row">
+			<table  class="table table-striped table-bordered" >
+	          
+		        <ul class="nav nav-tabs">
+		            <li class="active"><a data-toggle="tab" href="#home">Expansion</a></li>
+		            <li><a data-toggle="tab" href="#menu1">Cotizalia</a></li>
+		            <li><a data-toggle="tab" href="#menu2">Cinco Dias</a></li>
+		            <li><a data-toggle="tab" href="#menu3">Finanzas</a></li>
+		            <li><a data-toggle="tab" href="#menu4">Perfil</a></li>
+		            <li><a data-toggle="tab" href="#menu5">vacio</a></li>
+		        </ul>
 
+		        <div class="tab-content">
+			        <div id="home" class="tab-pane fade in active">
+			        	<div class="post_results" id="post_results3" rss_num="5" rss_url="http://estaticos.expansion.com/rss/empresas.xml">
+			                  <div class="loading_rss">
+			                    <img alt="Loading..." src="images/loading.gif" />
+			                  </div>
+			              </div>
+
+			        </div>
+			        <div id="menu1" class="tab-pane fade in active">
+			             <div class="post_results" id="post_results4" rss_num="5" rss_url="http://rss.elconfidencial.com/mercados/">
+			                  <div class="loading_rss">
+			                    <img alt="Loading..." src="images/loading.gif" />
+			                  </div>
+			              </div>
+			        </div>
+			        <div id="menu2" class="tab-pane fade in active">			              
+			            <div class="post_results" id="post_results1" rss_num="5" rss_url="http://cincodias.com/rss/cincodias/mercados.xml">
+				            <div class="loading_rss">
+				                <img alt="Loading..." src="images/loading.gif" />
+				            </div>
+			          	</div>        
+			        </div>
+			        <div id="menu3" class="tab-pane fade">			              
+			           <div class="post_results" id="post_results2" rss_num="5" rss_url="http://www.finanzas.com/rss/noticiasportada.xml">
+			                <div class="loading_rss">
+			                    <img alt="Loading..." src="images/loading.gif" />
+			                </div>
+			            </div>
+			        </div>
+			        <div id="menu4" class="tab-pane fade">
+			              <h2>Información sobre <strong>ABERTIS</strong></h2>
+						<div class="descripcion">
+							<p>Abertis es la corporación internacional líder en la gestión de autopistas y de infraestructuras de transporte y comunicaciones. Está presente en 10 países de Europa y américa. Gestiona directamente más de 7.300 kilómetros de autopistas y es el líder mundial en este sector. El grupo cuenta con una plantilla de casi 11.000 personas y el 50% de sus ingresos se genera fuera de España. El nivel de aplicación de los informes de Responsabilidad Social Corporativa de Abertis corresponde al más alto, A+.</p>
+							<p>Una de las últimas noticias sobre el grupo Abertis ha sido la celebración del 50º aniversario del Túnel de Guadarrama y el cierre de la venta del aeropuerto de Luton a un consorcio conformado por AENA y Ardian.</p>
+							<p>Las <strong>acciones de Abertis</strong> tienen su cotización en la Bolsa española (donde, además forma parte del Ibex 35). También está presente en los índices internacionales FTSEurofirst 300 y Standard & Poor's Europe 350.</p>
+						</div>
+						<p class="presidente"><strong>Presidente: </strong>Salvador Alemany i Más </p>
+						<p class="sector"><strong>Sector: </strong>Autopistas y aparcamientos </p>
+						<p class="direccion"><strong>Direcci&oacute;n: </strong>Avinguda del Parc Logístic, 12-20 ¿ 08040 Barcelona</p>
+						<p class="telefono"><strong>Tel&eacute;fono: </strong>+34 93 230 50 00 - <strong>Fax:</strong> 93 230 50 01</p>
+						<p id="web"><strong>Web: </strong><strong><a href="http://www.abertis.com/">http://www.abertis.com/</a></strong></p>    
+			                        
+			        </div>
+			        <div id="menu5" class="tab-pane fade">
+			              
+			               
+			        </div>
+		        </div>
+	       </table>
+	</div>
+</div>
+ 
+						<script type="text/javascript" >
+			         		anychart.onDocumentReady(function() {
+							  // create data set on our data
+							  var dataSet = anychart.data.set([
+							    [<% grafico19.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico19.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico18.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico18.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico17.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico17.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico16.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico16.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico15.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico15.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico14.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico14.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico13.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico13.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico12.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico12.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico11.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico11.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico10.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico10.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico09.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico09.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico08.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico08.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico07.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico07.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico06.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico06.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico05.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico05.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico04.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico04.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico03.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico03.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico02.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico02.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico01.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico01.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							    [<% grafico00.forEach(function(stockchart){%><%= stockchart[m=0][""]%><%})%>,<% grafico00.forEach(function(stockchart){%><%= stockchart[m=1]%><%})%>],
+							  ]);
+							  // map data for the first series, take x from the zero column and value from the first column of data set
+							  var seriesData = dataSet.mapAs({x: [0], value: [1]});
+
+							 // create line chart
+							  chart = anychart.area();
+
+							  // adding dollar symbols to yAxis labels
+							  chart.yAxis().labels().textFormatter("${%Value}");
+
+							  // turn on chart animation
+							  chart.animation(true);
+							  
+							  // axes settings
+							  chart.yAxis().title('Price');
+							  chart.xAxis().title('Date');
+							  chart.xAxis().labels().padding([5,5,0,5]);
+							  chart.xAxis().labels().rotation(90);
+							  chart.xAxis().overlapMode("allowOverlap");
+
+
+							  // set chart title text settings
+							  chart.title('ACME Share Price<br/>' +
+							  '<span style="color:#212121; font-size: 13px;">September 2015</span>');
+							  chart.title().useHtml(true).padding([0,0,20,0]);
+
+							  // create a series with mapped data
+							  var series = chart.area(seriesData);
+							  series.name("ACME Share Price");
+							  series.hoverMarkers().enabled(true).type('circle').size(4);
+
+							  // set chart tooltip and interactivity settings
+							  chart.tooltip().position('top').anchor('centerbottom');
+							  chart.tooltip().positionMode('point');
+							  chart.interactivity().hoverMode('byX');
+							  
+							  // chart padding
+							  chart.right(20);
+
+							  // set container id for the chart
+							  chart.container('grafito');
+
+							  // initiate chart drawing
+							  chart.draw();
+							});
+				     </script>
 
     <script type="text/javascript" src="../rss/mainrss.js"></script>
 	<script src="../../js/jquery-1.8.3.min.js" type="text/javascript"></script>
 	<script src="../../js/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../../js/holder.js"></script>
 	<script src="../../js/script.js"></script>
-	
+	<style>
+	        html, body, #grafito {
+	          width: 100%;
+	          height: 100%;
+	          margin: 0;
+	          padding: 0;
+	      }
+	 </style>
 </body>
 </html>
