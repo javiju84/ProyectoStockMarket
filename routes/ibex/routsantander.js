@@ -86,27 +86,7 @@ var dato2 = [];
 router.get('/',function(req,res){
   res.render('./home/ibex/santander',{
   	title:'Santander',
-  	aDocs:aDocs,
-    valores00: valores00,
-    valores01: valores01,
-    valores02: valores02,
-    valores03: valores03,
-    valores04: valores04,
-    valores05: valores05,
-    valores06: valores06,
-    valores07: valores07,
-    valores08: valores08,
-    valores09: valores09,
-    valores10: valores10,
-    valores11: valores11,
-    valores12: valores12,
-    valores13: valores13,
-    valores14: valores14,
-    valores15: valores15,
-    valores16: valores16,
-    valores17: valores17,
-    valores18: valores18,
-    valores19: valores19,
+  	
   });
 });
 
