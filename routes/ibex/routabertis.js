@@ -341,6 +341,7 @@ var stockchart = [];
 router.get('/', function(req, res, next) {
   res.render('./home/ibex/abertis', { 
   	parseo_nombre: parseo_nombre,
+    parseo_code:parseo_code,
     valores00: valores00,
     valores01: valores01,
     valores02: valores02,
