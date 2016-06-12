@@ -25,21 +25,21 @@ router.get('/',function(req,res){
 
 
 //cerrar sesion y destruir cookie
-/*
+
 router.get('/logout',function(req,res){
- // req.session = null;
-  //res.redirect('index')
+ req.session.user_id = null;
+  res.redirect('index');
 
 
-});*/
-
+});
+/*
 router.get('/logout', function atLogout (req, res) {
-   // res.clearCookie('session');
+    res.clearCookie('session');
     res.redirect('login');
     console.log('sesion cerrada')
 });
 
-
+*/
 
 //enviar datos del registro a la base de datos
 router.post("/users",function(req,res){
@@ -70,6 +70,14 @@ router.post("/sessions",function(req,res){
 
     });
   });
-
+exports.home =function(req,res,next){
+  User.find(gotUsers)
+  function gotUsers (err,user){
+    if(err){
+      return nexr()
+    }
+    return res.render('home',{title:'Email', user:user} )
+  }
+}
 
 module.exports = router;

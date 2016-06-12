@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var request = require ('request');
 
-
 var jsonString = null;
 var urlAbertis = "https://www.quandl.com/api/v3/datasets/YAHOO/MC_ABE.json?api_key=HGoTu3E3A_Lsv6biw1kc";
 
@@ -37,8 +36,8 @@ var urlAbertis = "https://www.quandl.com/api/v3/datasets/YAHOO/MC_ABE.json?api_k
 			
 			var parseo_code = body.dataset.dataset_code;
       var parseo_nombre = body.dataset.name;
-      console.log(parseo_code)
-      console.log(parseo_nombre)
+      //console.log(parseo_code)
+      //console.log(parseo_nombre)
 		}
 	
 
@@ -77,6 +76,9 @@ var dato2 = [];
   var valores17 = ([dato2 [n=17]]);
   var valores18 = ([dato2 [n=18]]);
   var valores19 = ([dato2 [n=19]]);
+  //console.log(valores00)
+
+
 
 var stockchart = [];
     for (var m = 0; m < jsonArrayValor.length; m++){
@@ -333,7 +335,7 @@ var stockchart = [];
   var grafico238 = ([stockchart [m=238]]);
   var grafico239 = ([stockchart [m=239]]);
   
-  console.log(grafico19)
+  //console.log(grafico19)
 
 
 router.get('/', function(req, res, next) {
@@ -600,7 +602,9 @@ router.get('/', function(req, res, next) {
     grafico238: grafico238, 
     grafico239: grafico239,
   });
-});
 
 });
+});
+
 module.exports = router;
+//exports.valores00;

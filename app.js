@@ -6,7 +6,9 @@ var cookieParser = require('cookie-parser');
 var cookieSession = require ("cookie-session");
 var bodyParser = require('body-parser');
 
+
 //routes
+
 var routabertis = require('./routes/ibex/routabertis');
 var routacciona = require('./routes/ibex/routacciona');
 var routacerinox = require('./routes/ibex/routacerinox');
@@ -46,12 +48,13 @@ var ibex = require('./routes/ibex');
 var europa = require('./routes/europa');
 var eeuu = require('./routes/eeuu');
 var asia = require('./routes/asia');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 //BaseDatos
-var ibex35_santander = require("./models/santander").ibex35_santander;
 var User = require('./models/user').User;
+
 var app = express();
 var session_middleware = require("./middlewares/session");
 

@@ -20,7 +20,7 @@ var user_schema = new Schema({
 
 });
 
-user_schema.virtual('password_confirmation').get(function(){
+user_schema.virtual('password_confirmation').get(function(){Usuarios
 	return this.p_c;
 	}).set(function(password){
 		this.p_c = password;
