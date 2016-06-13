@@ -71,248 +71,216 @@
 
 <!--graficos & noticias & tabla -->
 <div class="container">
+
     <div class="row">
         <div class="span4">
             <div class="content vspace20"></div>
-                <table ">
-                    
-                    <tbody>
-                        
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>  
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>  
-                        </tr>
-                        <tr>
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>  
-                           <th><p><a href="./santander"><button class="btn btn-default">
-                        <img src="/../../images/button/santander.png" width="200"/>
-                        </button></a></p></th>  
-                        
-                    </tbody>
-                </table>
-                 
-                
-            
+               
         </div>
 
         <div class="span8">
             
-        <div>
+            <div>
                 <center>
-
-          <table  class="table table-hover table-bordered">
-                    <thead>
-                        
+                <table  class="table table-hover table-bordered">
+                        <thead>
                             <center><h4><%= parseo_nombre %></h4></center>
-
-                    </thead>
-                
-            </table>
-           <table  class="table table-hover table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Apertura</th>
-                            <th>Alto</th>
-                            <th>Bajo</th>
-                            <th>Cierre</th>
-                            <th>Volumen</th>
-                            <th>Ajust.Cierre</th>
-                            <th>Fecha</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                         <tr>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
-                            <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
-                        </tr>
-                    </tbody>
+                        </thead>
+                </table>
+                <table  class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Apertura</th>
+                                <th>Alto</th>
+                                <th>Bajo</th>
+                                <th>Cierre</th>
+                                <th>Volumen</th>
+                                <th>Ajust.Cierre</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores00"><% valores00.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores01"><% valores01.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores02"><% valores02.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores03"><% valores03.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores04"><% valores04.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores06"><% valores05.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores06"><% valores06.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores07"><% valores07.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores08"><% valores08.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores09"><% valores09.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores10"><% valores10.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores11"><% valores11.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores12"><% valores12.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores13"><% valores13.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores14"><% valores14.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores15"><% valores15.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores16"><% valores16.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores17"><% valores17.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores18"><% valores18.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                             <tr>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=1]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=2]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=3]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=4]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=5]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=6]%><%})%></td>
+                                <td id="valores19"><% valores19.forEach(function(dato2){%><%= dato2[n=0]%><%})%></td>                
+                            </tr>
+                        </tbody>
                 </table>
                 </center>
                 </div>
@@ -333,8 +301,8 @@
           
           <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#Grafico01">1 mes</a></li>
-            <li><a data-toggle="tab" href="#Grafico02">3 meses<</a></li>
-            <li><a data-toggle="tab" href="#Grafico03">6 meses<</a></li>
+            <li><a data-toggle="tab" href="#Grafico02">3 meses</a></li>
+            <li><a data-toggle="tab" href="#Grafico03">6 meses</a></li>
             <li><a data-toggle="tab" href="#Grafico04">1 año</a></li>
             <li><a data-toggle="tab" href="#Grafico05">Volumen</a></li>
             <li><a data-toggle="tab" href="#Grafico06">Open-Close</a></li>

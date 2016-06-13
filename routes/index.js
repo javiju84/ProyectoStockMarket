@@ -70,6 +70,7 @@ router.post("/sessions",function(req,res){
 
     });
   });
+/*
 exports.home =function(req,res,next){
   User.find(gotUsers)
   function gotUsers (err,user){
@@ -79,5 +80,5 @@ exports.home =function(req,res,next){
     return res.render('home',{title:'Email', user:user} )
   }
 }
-
+*/
 module.exports = router;
