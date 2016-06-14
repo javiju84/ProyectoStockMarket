@@ -45,9 +45,16 @@ var routtecnicasreunidas = require('./routes/ibex/routtecnicasreunidas');
 var routsantander = require('./routes/ibex/routsantander');
 var routtelefonica = require('./routes/ibex/routtelefonica');
 var ibex = require('./routes/ibex');
+var eurostoxx = require('./routes/europa/eurostoxx');
+var dax = require('./routes/europa/dax');
+var cac40 = require('./routes/europa/cac40');
+var dow = require('./routes/eeuu/dow');
+var nikkei = require('./routes/eeuu/nikkei');
+var sp500 = require('./routes/eeuu/sp500');
+
+
 var europa = require('./routes/europa');
 var eeuu = require('./routes/eeuu');
-var asia = require('./routes/asia');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -82,9 +89,17 @@ app.use('/users', users);
 app.use('/home',session_middleware);
 app.use('/home',routes);
 app.use('/home/ibex',ibex);
+app.use('/home/cac40',cac40);
+app.use('/home/dax',dax);
+app.use('/home/eurostoxx',eurostoxx);
+app.use('/home/dow',dow);
+app.use('/home/nikkei',nikkei);
+app.use('/home/sp500',sp500);
+
+
+
 app.use('/home/europa',europa);
 app.use('/home/eeuu',eeuu);
-app.use('/home/asia',asia);
 app.use('/home/abertis',routabertis);
 app.use('/home/acciona',routacciona);
 app.use('/home/acerinox',routacerinox);
