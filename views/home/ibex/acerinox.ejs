@@ -7,7 +7,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Stock Market</title>
+  <title>Stock Market ACERINOX</title>
 
    <!-- Included Bootstrap CSS Files -->
 	<link rel="stylesheet" href="../../js/bootstrap/css/bootstrap.min.css" />
@@ -52,7 +52,7 @@
 				</ul>
 				<ul class="nav pull-right">
 					
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, <%= user.username %> <b class="caret"></b></a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= user.username %> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><i class="icon-cog"></i> Preferences</a></li>
                             <li><a href="#"><i class="icon-envelope"></i> Contact Support</a></li>
@@ -67,6 +67,8 @@
 	</div>
 </div> 
 <div class="content vspace20">
+    <center><h1><%= parseo_nombre %></h1></center>
+
 </div>
 
 <!--graficos & noticias & tabla -->
@@ -140,11 +142,10 @@
 	        	<center>
 
 	      <table  class="table table-hover table-bordered">
-			    	<thead>
-			    	 	
-	                        <center><h4><%= parseo_nombre %></h4></center>
+	      			<div class="content vspace20">
+					</div>
 
-	                </thead>
+			    	
 	                <thead>
 	                		<th id="valores00">Precio: <% valores00.forEach(function(dato2){%><%= dato2[n=6]%><%})%>€</th>
 	                		<th id="valores00">Máximo: <% valores00.forEach(function(dato2){%><%= dato2[n=2]%><%})%></th>
@@ -424,9 +425,9 @@
 			<div class="row pull-right">							
 				<h4>Redes Sociales</h4>
 				<p>
-					<a href="#"><img src="../../img/socials/facebook.png" alt="" /></a>
-					<a href="#"><img src="../../img/socials/twitter.png" alt="" /></a>
-					<a href="#"><img src="../../img/socials/youtube.png" alt="" /></a>
+					<a href="https://es-es.facebook.com/people/Mark-Javier/100012560946189"><img src="../../img/socials/facebook.png" alt="" /></a>
+					<a href="https://twitter.com/StockMa62890025"><img src="../../img/socials/twitter.png" alt="" /></a>
+					<a href="https://www.youtube.com/channel/UCi65sj8Kzhp6UVTHz-xyQDg"><img src="../../img/socials/youtube.png" alt="" /></a>
 				</p>
 				
 			</div>
